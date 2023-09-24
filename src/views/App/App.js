@@ -10,7 +10,12 @@ function App() {
   return (
     <>
       <h1 className='text-center'>Contact List : {searchTerm}</h1>
-      
+      <input type='text'
+        placeholder='Search'
+        className='search'
+        value={searchTerm}
+        onChange={(e) => { setSearchTerm(e.target.value) }}
+      />
       <div>
         {contacts.map((contact, index) => {
           const { name, mobile } = contact;
