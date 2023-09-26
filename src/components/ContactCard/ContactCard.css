@@ -1,9 +1,25 @@
+.contactlist-main-container{
+    height: 540px;
+    width: 500px;
+    border: 3px double rgb(23, 188, 72);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:  rgb(174, 250, 197);
+    margin-top: 60px;
+    border-radius: 20px;
+}
 .contact-card{
     width: 300px;
     padding: 10px;
     border: 1.5px solid rgb(85, 246, 133);
+    box-shadow: 0 0 2px 1px  rgb(85, 246, 133);
     border-radius: 5px;
     margin: 15px auto;
     /* background-color: rgb(117, 226, 148); */
     background-color:white;
+}
+
+.font-size{
+    font-size: 19px;
 }

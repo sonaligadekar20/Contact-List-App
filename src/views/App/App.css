@@ -5,6 +5,7 @@ body{
     text-align: center;
     font-size: 42px;
     margin-top: 40px;
+    color:  rgb(7, 64, 24);
 
 }
 .search{
@@ -13,7 +14,16 @@ body{
     font-size: 22px;
     padding: 6px 25px;
     border-radius: 15px;
-    margin-top: 70px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-bottom: 30px;
     border:1px solid  rgb(56, 240, 111);
+}
+.contactcard-container{
+    height: 400px;
+    overflow-y:scroll;
+
+}
+.contactcard-container::-webkit-scrollbar{
+    width: 5px;
+
 }

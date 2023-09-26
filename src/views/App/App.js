@@ -4,7 +4,7 @@ import { phonebook } from '../../data/phonebook'
 import ContactCard from '../../components/ContactCard/ContactCard'
 
 function App() {
-  const [contacts, setcontacts] = React.useState(phonebook); 
+  const [contacts, setcontacts] = React.useState(phonebook);
   const [searchTerm, setSearchTerm] = useState('')
 
   useEffect(() => {
@@ -21,22 +21,24 @@ function App() {
 
   return (
     <>
-      <h1 className='text-center'>CONTACT LIST ☎️ : {}</h1>
-      <input type='text'
-        placeholder='Search'
-        className='search'
-        value={searchTerm}
-        onChange={(e) => { setSearchTerm(e.target.value) }}
-      />
-      <div>
-        {contacts.map((contact, index) => {
-          const { name, mobile } = contact;
+      <h1 className='text-center'>CONTACT LIST ☎️ : { }</h1>
+      <div className='contactlist-main-container'>
+        <input type='text'
+          placeholder='🔎 Search'
+          className='search'
+          value={searchTerm}
+          onChange={(e) => { setSearchTerm(e.target.value) }}
+        />
+        <div className='contactcard-container'>
+          {contacts.map((contact, index) => {
+            const { name, mobile } = contact;
 
-          return <ContactCard key={index} name={name} mobile={mobile} />
+            return <ContactCard key={index} name={name} mobile={mobile} />
 
-        })}
+          })}
+        </div>
+
       </div>
-
     </>
   )
 }
